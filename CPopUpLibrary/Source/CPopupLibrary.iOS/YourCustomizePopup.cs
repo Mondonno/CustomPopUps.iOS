@@ -46,9 +46,9 @@ namespace CPopupLibrary
 
         public YourCustomizePopup()
         {
-
-        }
  
+        }
+  
         private protected async Task OpenHandler()
         {
             //This code below will be started when the popup will be opened!
