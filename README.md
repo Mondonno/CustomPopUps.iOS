@@ -6,7 +6,7 @@ You think: Any library or any code to animate and make custom popup in Xamarin.i
 
 ## How to use?
 
-**1.** 🚀 Download [`CPopupLibrary`]() Folder from our repository and add it to your Xamarin project (you can use [**GitZip**](http://kinolien.github.io/gitzip/))<br><br>
+**1.** 🚀 Download <a target="_blank" href="https://github.com/Mondonno/CustomPopUps.iOS/blob/master/CPopUpLibrary/Downloads/CPopupLibraryDEMO.iOS.zip?raw=true">`CPopupLibrary`</a> Folder from our repository and add it to your Xamarin project (or you can use [**GitZip**](http://kinolien.github.io/gitzip/))<br><br>
 **2.** 🛰 Add `using CPopupLibrary` on the top of your .cs file where you wan't to use custom popups<br><br>
 **3.** 😍 Now just add some code at `YourCustomizePopup.cs` in `YourPopUpCode` Method<br><br>
 **4.** 😎 Create the `YourCustomizePopup` object like this:<br><br>
