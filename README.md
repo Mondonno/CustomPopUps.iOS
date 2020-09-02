@@ -28,6 +28,7 @@ await popup.ShowPopUp();
 ## Credits
 - .NET CoreGraphics | For animations<br>
 - [**@BartekPacia**](https://github.com/bartekpacia) | For reviews
+- [**@AlancLiu**] | For Idea
 
 This is the demo version of this library!<br>
 If you have issus report them in **Issues Tab**
