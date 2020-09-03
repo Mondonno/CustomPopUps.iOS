@@ -62,8 +62,6 @@ namespace CPopupLibrary
 
         }
 
-        
-
         private async Task YourPopUpCode()
         {
             #region Starting

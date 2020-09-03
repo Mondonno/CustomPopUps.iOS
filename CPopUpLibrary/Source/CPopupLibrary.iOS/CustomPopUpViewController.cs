@@ -39,25 +39,33 @@ namespace CPopupLibrary
         //PopUp Showing
         public void PopUp( bool animated = true, Action popAnimationFinish = null)
         {
+            //Setting UIWindow to show popup
             UIWindow window = UIApplication.SharedApplication.KeyWindow;
+            //Setting effect view frame
             effectView.Frame = window.Bounds;
+            //Editing windows
             window.EndEditing(true);
             window.AddSubview(effectView);
             window.AddSubview(this);
-            
+            //Checking if animated
             if (animated)
             {
+                //Transforming to 0.1f Scale to make animation
                 Transform = CGAffineTransform.MakeScale(0.1f, 0.1f);
+                //Animating UIView by Core Grpahics
                 UIView.Animate(0.15, delegate {
+                    //Making other animations
                     Transform = CGAffineTransform.MakeScale(1, 1);
                     effectView.Alpha = 0.8f;
                 }, delegate {
+                    //Running event (popAnimationFinish)
                     if (null != popAnimationFinish)
                         popAnimationFinish();
                 });
             }
             else
             {
+                //Changing alpha in effect view
                 effectView.Alpha = 0.8f;
             }
         }
@@ -65,24 +73,29 @@ namespace CPopupLibrary
         //Closing PopUp
         public void Close(bool animated = true)
         {
-
+            //Checking if animated
             if (animated)
             {
+                //Animating UIView by Core Grpahics
                 UIView.Animate(0.15, delegate {
+                    //Making other animations
                     Transform = CGAffineTransform.MakeScale(0.1f, 0.1f);
                     effectView.Alpha = 0;
                 }, delegate {
+                    //Removing from View Controller PopUp and Effects
                     this.RemoveFromSuperview();
                     effectView.RemoveFromSuperview();
+                    //Running event (PopUpWillClose)
                     if (null != PopUpWillClose) PopUpWillClose();
                 });
             }
             else
             {
+                //Running event (PopUpWillClose)
                 if (null != PopUpWillClose) PopUpWillClose();
             }
 
         }
-        
+    
     }
 }

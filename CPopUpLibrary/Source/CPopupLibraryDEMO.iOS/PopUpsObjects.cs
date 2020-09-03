@@ -5,7 +5,7 @@ namespace CPopupLibrary
 {
     public class PopUpsObjects : CustomPopUpViewController
     {
-        //Working on it...
+        //Working on it... (Alpha)
         
         public enum AniamtionType
         {
