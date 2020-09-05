@@ -1,0 +1,45 @@
+#1 Example: Basic code (first popup 😍): UIImageView + UITextView + UILabel + UIButton
+
+            UIButton btnClose = new UIButton(UIButtonType.System);
+            UIImage img = UIImage.FromFile("./pop-up.png");
+            UIImageView imgview = new UIImageView(img);
+            imgview.Frame = new CGRect(0,75, this.Frame.Width ,300);
+            UILabel label = new UILabel(new CGRect(0,0,this.Frame.Width, 50));
+            nfloat btnHeight = 40;
+            btnClose.SetTitle("Close", UIControlState.Normal);
+            btnClose.Frame = new CGRect(0, this.Frame.Height - btnHeight, this.Frame.Width/2 + 140, btnHeight);
+            btnClose.TouchUpInside += delegate {
+                Close();
+            };
+            DemoTextView.Frame = new CGRect(0, 400, this.Frame.Width, 40);
+            DemoTextView.Font = UIFont.SystemFontOfSize(40);
+            DemoTextView.Font = UIFont.FromName("Futura", 30);
+            DemoTextView.SmartQuotesType = UITextSmartQuotesType.No;
+            DemoTextView.SmartInsertDeleteType = UITextSmartInsertDeleteType.No;
+            DemoTextView.SmartDashesType = UITextSmartDashesType.No;
+            
+            
+            btnClose.TitleShadowOffset = new CGSize(0, 1);
+            this.BackgroundColor = UIColor.Green;
+            btnClose.BackgroundColor = UIColor.Green;
+
+            btnClose.TintColor = UIColor.White;
+            btnClose.Font = UIFont.FromName("Futura", 30);
+            label.BackgroundColor = UIColor.FromRGB(0,201,0);
+            label.Font = UIFont.FromName("Futura", 30);
+            label.TextAlignment = UITextAlignment.Center;
+            label.Text = "CustomPopUps.iOS";
+
+           
+            this.AddSubview(btnClose);
+            this.AddSubview(DemoTextView);
+            this.AddSubview(imgview);
+            this.AddSubview(label);
+
+//Following properties for size and radius:
+PopUpWidth = 300;
+PopUpHeight = 500;
+FrameRadius = 0;
+
+
+

@@ -1,0 +1,26 @@
+#3 Example: PopUp Web View: WKWebView + UIButton
+//(WARNING!) Must add at top the YourCustomizePopup.cs following code: using WebKit;
+
+            CGRect frm = this.Frame;
+            CGRect web_frm = new CGRect(frm.X - 57, frm.Y/2 -60 ,frm.Width, frm.Height - 45);
+            WKWebView webView = new WKWebView(web_frm, new WKWebViewConfiguration());
+            UIButton btnClose = new UIButton(UIButtonType.System);
+            var url = new NSUrl("https://github.com/Mondonno/CustomPopUps.iOS");
+            var request = new NSUrlRequest(url);
+            
+            btnClose.SetTitle("Close", UIControlState.Normal);
+            btnClose.Frame = new CGRect(0, this.Frame.Height - 40, this.Frame.Width / 2 + 140, 40);
+            btnClose.TouchUpInside += delegate {
+                Close();
+            };
+            btnClose.TintColor = UIColor.Black;
+            btnClose.Font = UIFont.FromName("Futura", 30);
+
+            this.AddSubview(webView);
+            this.AddSubview(btnClose);
+            webView.LoadRequest(request);
+
+//Following properties for size and radius:
+PopUpWidth = 300;
+PopUpHeight = 500;
+FrameRadius = 0;

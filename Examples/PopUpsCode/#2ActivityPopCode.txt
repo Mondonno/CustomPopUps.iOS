@@ -1,0 +1,14 @@
+#2 Example: 🛰 Loading View: UIActivityIndicatorView
+
+            UIActivityIndicatorView activityIndicatorView = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Large);
+            nfloat act_h = 20;
+            activityIndicatorView.Frame = new CGRect(act_h + 6.5,this.Frame.Height - act_h - 3.5,0,0);
+            activityIndicatorView.HidesWhenStopped = true;
+            activityIndicatorView.StartAnimating();
+            this.AddSubview(activityIndicatorView);
+
+//Following properties for size and radius:
+PopUpWidth = 50;
+PopUpHeight = 50;
+FrameRadius = 6f;
+
