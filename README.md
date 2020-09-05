@@ -3,6 +3,7 @@
 </p>
 
 # CustomPopUps.iOS
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()<br>
 
 ## Custom popups examples/library for Xamarin.iOS framework.
 
@@ -32,19 +33,20 @@ await popup.ShowPopUp();
 
 - [ ] Add the library to NuGet
 - [ ] Add more personalized customization options
-- [ ] Add to choose more graphics libs (You can make popup using the eg. SKia Sharp )
-- [ ] Add more cool animations!🎉
+- [ ] Add to choose more graphics libs (You can make popup using the eg. Skia Sharp )
+- [ ] Add more cool animations! 🎉
+- [ ] Add the project Wiki!
 
 ## Depends on
 
-- .NET CoreGraphics | For animations<br>
+- **.NET CoreGraphics** | For animations<br>
 
 ## Credits
 
 - [**@BartekPacia**](https://github.com/bartekpacia) | For reviews
 - [**@AlancLiu**](https://stackoverflow.com/users/6228063/alanc-liu) | For Idea
 
-## ⚠️Warning⚠️
+## ⚠️ Warning ⚠️
 
 This is the alpha/demo version of the library!<br>
 If you encounter any problems, please create a new Issue in the [**Issues Tab**](https://github.com/Mondonno/CustomPopUps.iOS/issues)
