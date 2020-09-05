@@ -27,12 +27,14 @@ namespace CPopupLibrary
         private UIVisualEffectView effectView = new UIVisualEffectView(UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark));
 
         //Initializing PopUp
-        public void CustomPopUpInit(CGSize size, nfloat? frame_radius = null)
+        public void CustomPopUpInit(CGSize size, nfloat? FrameRadius = null)
         {
             //Setting size and makeing effects
             nfloat lx = (UIScreen.MainScreen.Bounds.Width - size.Width) / 2;
             nfloat ly = (UIScreen.MainScreen.Bounds.Height - size.Height) / 2;
             this.Frame = new CGRect(new CGPoint(lx, ly), size);
+            if(FrameRadius == null) FrameRadius = 0;
+            this.Layer.CornerRadius = FrameRadius;
             effectView.Alpha = 0;
         }
 

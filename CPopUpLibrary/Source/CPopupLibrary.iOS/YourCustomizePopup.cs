@@ -18,12 +18,6 @@ namespace CPopupLibrary
 {
     public class YourCustomizePopup : PopUpsObjects
     {
-        //Set your popup size! 
-        public double PopUpWidth = 300;
-        public double PopUpHeight = 500;
-        //Set your popup radius! (0 for any radius) SOON!
-        public nfloat FrameRadius = 10;
-
         #region PUSS | PopUps System Settings
         public async Task ShowPopUp()
         {
@@ -66,7 +60,7 @@ namespace CPopupLibrary
         {
             #region Starting
             CGSize PopUpSize = new CGSize(PopUpWidth, PopUpHeight);
-            CustomPopUpInit(PopUpSize);
+            CustomPopUpInit(PopUpSize, (nfloat) FrameRadius);
             #endregion
 
             // Here write your PopUp code and declare the objects
