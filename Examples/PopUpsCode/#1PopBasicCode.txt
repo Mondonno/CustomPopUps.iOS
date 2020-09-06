@@ -1,5 +1,5 @@
 #1 Example: Basic code (first popup 😍): UIImageView + UITextView + UILabel + UIButton
-
+            UITextView DemoTextView = new UITextView();
             UIButton btnClose = new UIButton(UIButtonType.System);
             UIImage img = UIImage.FromFile("./pop-up.png");
             UIImageView imgview = new UIImageView(img);

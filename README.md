@@ -3,8 +3,6 @@
 </p>
 
 # CustomPopUps.iOS
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()<br>
-
 ## Custom popups examples/library for Xamarin.iOS framework.
 
 You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate then? Well, you've just found it!
