@@ -18,11 +18,13 @@ namespace CPopupLibrary
 {
     public class CustomPopUpViewController : UIView
     {
+        public delegate void PopWillOpenHandler();
         
         public delegate void PopWillCloseHandler();
 
         //You can use it to handle the closing PopUp event
         public event PopWillCloseHandler PopUpWillClose;
+        public event PopWillOpenHandler  PopUpWillOpen;
 
         private UIVisualEffectView effectView = new UIVisualEffectView(UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark));
 
@@ -60,9 +62,9 @@ namespace CPopupLibrary
                     Transform = CGAffineTransform.MakeScale(1, 1);
                     effectView.Alpha = 0.8f;
                 }, delegate {
-                    //Running event (popAnimationFinish)
-                    if (null != popAnimationFinish)
-                        popAnimationFinish();
+                    //Running event
+                    if (null != PopUpWillOpen)
+                        PopUpWillOpen();
                 });
             }
             else

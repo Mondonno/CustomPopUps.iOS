@@ -60,9 +60,10 @@ namespace CPopupLibrary
                     Transform = CGAffineTransform.MakeScale(1, 1);
                     effectView.Alpha = 0.8f;
                 }, delegate {
-                    //Running event (popAnimationFinish)
-                    if (null != popAnimationFinish)
-                        popAnimationFinish();
+                    
+                    //Running event
+                    if (null != PopUpWillOpen)
+                        PopUpWillOpen();
                 });
             }
             else
