@@ -30,7 +30,7 @@ await popup.ShowPopUp();
 ## Coming soon...
 
 - [ ] Add the library to NuGet
-- [ ] Add more personalized customization options
+- [x] Add more personalized customization options! 80/70%
 - [ ] Add to choose more graphics libs (You can make popup using the eg. Skia Sharp )
 - [ ] Add more cool animations! 🎉
 - [ ] Add the project Wiki!

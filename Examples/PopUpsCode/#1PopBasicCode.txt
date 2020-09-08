@@ -10,7 +10,7 @@
             btnClose.Frame = new CGRect(0, this.Frame.Height - btnHeight, this.Frame.Width/2 + 140, btnHeight);
             btnClose.TouchUpInside += delegate {
                 Close();
-            };
+            }; 
             DemoTextView.Frame = new CGRect(0, 400, this.Frame.Width, 40);
             DemoTextView.Font = UIFont.SystemFontOfSize(40);
             DemoTextView.Font = UIFont.FromName("Futura", 30);
