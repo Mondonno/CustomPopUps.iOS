@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" height="200" src="https://i.imgur.com/32FqQY0.png" alt="smartphone">
+  <img width="199" height="199" src="https://i.imgur.com/32FqQY0.png" alt="smartphone">
 </p>
 
 # CustomPopUps.iOS
