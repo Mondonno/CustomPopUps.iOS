@@ -34,6 +34,7 @@ await popup.ShowPopUp();
 - [ ] Add to choose more graphics libs (You can make popup using the eg. Skia Sharp )
 - [ ] Add more cool animations! 🎉
 - [ ] Add the project Wiki!
+- [ ] Make the library4library system
 
 ## Depends on
 
