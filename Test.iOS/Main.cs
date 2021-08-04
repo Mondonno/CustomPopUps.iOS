@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace CustomPopUpDemo
+namespace Test.iOS
 {
     public class Application
     {
