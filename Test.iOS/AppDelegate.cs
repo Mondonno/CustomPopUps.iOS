@@ -1,7 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 
-namespace CustomPopUpDemo
+namespace Test.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
@@ -17,6 +17,7 @@ namespace CustomPopUpDemo
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+
             return true;
         }
 
