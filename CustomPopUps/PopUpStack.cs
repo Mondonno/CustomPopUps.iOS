@@ -5,17 +5,10 @@ namespace CustomPopUps
 {
     public class PopUpStack
     {
-        public List<PopUp> PopUps { get; set; }
-
-        public PopUpStack()
-        {
-            PopUps = new List<PopUp>();
-        }
+        public List<PopUp> PopUps { get; private set; } = new List<PopUp>();
 
         public void Add(PopUp pop)
-        {
-            PopUps.Add(pop);
-        }
+            => PopUps.Add(pop);
 
         public void Show(PopUp popUp)
         {
@@ -37,8 +30,6 @@ namespace CustomPopUps
         }
 
         public void Hide(int index)
-        {
-            PopUps[index].Close();
-        }
+            => PopUps[index].Close();
     }
 }

@@ -85,15 +85,11 @@ namespace Test.iOS
         }
 
         private CGRect GetCenter(UIView view, nfloat width, nfloat height)
-        {
-            return new CGRect(0, view.Frame.Height / 2 + height + (height / 2), view.Frame.Width / 2 + width + (width / 2), height);
-        }
+            => new CGRect(0, view.Frame.Height / 2 + height + (height / 2), view.Frame.Width / 2 + width + (width / 2), height);
 
         [Obsolete]
-        private CGRect GetBottomCenter(UIView view, nfloat width, nfloat height)
-        {
-            return new CGRect(0, view.Frame.Height - height, view.Frame.Width / 2 + width, height);
-        }
+        private CGRect GetBottomCenter(UIView view, nfloat width, nfloat height) =>
+            new CGRect(0, view.Frame.Height - height, view.Frame.Width / 2 + width, height);
 
         public override void DidReceiveMemoryWarning()
         {
