@@ -3,9 +3,18 @@
 </p>
 
 # CustomPopUps.iOS
-## Custom popups examples/library for Xamarin.iOS framework.
+
+**Custom popups examples/library for Xamarin.iOS framework.**
 
 You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate then? Well, you've just found it!
+
+## Features 
+
+- Automatically exiting popup after click outside of it
+- Easliy passing windows and contexts into it
+- Beautiful, and customizable animations
+- Emmiters on the popup events like show/close
+- Using only Xamarin libraries (built-in), no 3rd party bull*hit libraries involved
 
 ## How to use?
 
@@ -47,5 +56,5 @@ await popup.ShowPopUp();
 
 ## ⚠️ Warning ⚠️
 
-This is the alpha/demo version of the library!<br>
+This is the beta version of the library!<br>
 If you encounter any problems, please create a new Issue in the [**Issues Tab**](https://github.com/Mondonno/CustomPopUps.iOS/issues)
