@@ -14,10 +14,10 @@ namespace CustomPopUps
             Frame = new CGRect(new CGPoint(lx, ly), size);
             Layer.CornerRadius = Constants.LayerRadius;
 
-            clickOutCloseView.AddGestureRecognizer(new UITapGestureRecognizer(() => Close()));
+            ClickOutCloseView.AddGestureRecognizer(new UITapGestureRecognizer(() => Close()));
         }
 
-        private UIView clickOutCloseView = new UIView();
+        private UIView ClickOutCloseView = new UIView();
         private UIVisualEffectView EffectView = new UIVisualEffectView(UIBlurEffect.FromStyle(Constants.BlurEffect));
 
         public delegate void OnCloseHandler();
@@ -37,10 +37,10 @@ namespace CustomPopUps
                 window.EndEditing(true);
                 window.AddSubview(EffectView);
 
-                clickOutCloseView.BackgroundColor = null;
-                clickOutCloseView.Frame = window.Frame;
+                ClickOutCloseView.BackgroundColor = null;
+                ClickOutCloseView.Frame = window.Frame;
 
-                window.AddSubview(clickOutCloseView);
+                window.AddSubview(ClickOutCloseView);
                 window.AddSubview(this);
             }
 
@@ -59,12 +59,16 @@ namespace CustomPopUps
                 Transform = CGAffineTransform.MakeScale(0.1f, 0.1f);
                 EffectView.Alpha = 0;
             }, delegate {
-                RemoveFromSuperview();
-                clickOutCloseView.RemoveFromSuperview();
-                EffectView.RemoveFromSuperview();
-
+                RemoveOnClose()
                 OnClose?.Invoke();
             });
+        }
+
+        private void RemoveOnClose()
+        {
+            RemoveFromSuperview();
+            ClickOutCloseView.RemoveFromSuperview();
+            EffectView.RemoveFromSuperview();
         }
     }
 }
