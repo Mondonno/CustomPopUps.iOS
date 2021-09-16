@@ -6,6 +6,10 @@
 
 **Custom popups examples/library for Xamarin.iOS framework.**
 
+**Hot note**:
+Beacause of Microsoft is depreacting Xamarin as 2022
+we will add a support for new MAUI, If it will be necesarry.
+
 You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate then? Well, you've just found it!
 
 ## Features 
