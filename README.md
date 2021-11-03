@@ -6,7 +6,7 @@
 
 **Custom popups examples/library for Xamarin.iOS framework.**
 
-**Hot note**:
+**Hot note**:<br>
 Beacause of Microsoft is depreacting Xamarin as 2022
 we will add a support for new MAUI, If it will be necesarry.
 
@@ -57,8 +57,3 @@ await popup.ShowPopUp();
 
 - [**@BartekPacia**](https://github.com/bartekpacia) | For reviews
 - [**@AlancLiu**](https://stackoverflow.com/users/6228063/alanc-liu) | For Idea
-
-## ⚠️ Warning ⚠️
-
-This is the beta version of the library!<br>
-If you encounter any problems, please create a new Issue in the [**Issues Tab**](https://github.com/Mondonno/CustomPopUps.iOS/issues)
