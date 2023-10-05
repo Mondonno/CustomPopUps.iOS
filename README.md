@@ -6,54 +6,38 @@
 
 **Custom popups examples/library for Xamarin.iOS framework.**
 
-**Hot note**:<br>
-Beacause of Microsoft is depreacting Xamarin as 2022
-we will add a support for new MAUI, If it will be necesarry.
+> **Hot note**:<br>
+> Beacause of the fact that Microsoft is depreacting Xamarin as 2022
+> we will add a support for new MAUI, If it will be necesarry.
 
-You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate then? Well, you've just found it!
+You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate them? Well, you've just found it!
 
 ## Features 
 
 - Automatically exiting popup after click outside of it
-- Easliy passing windows and contexts into it
+- Easily passing windows and contexts into it
 - Beautiful, and customizable animations
-- Emmiters on the popup events like show/close
-- Using only Xamarin libraries (built-in), no 3rd party bull*hit libraries involved
+- Ability to listen on the popup events like show and close
+- Using only Xamarin libraries (built-in), no 3rd party libraries involved
 
 ## How to use?
 
-**1.** 🚀 Download <a target="_blank" href="https://github.com/Mondonno/CustomPopUps.iOS/blob/master/CPopUpLibrary/Downloads/CPopupLibraryDEMO.iOS.zip?raw=true">`CPopupLibrary`</a> folder from our repository and add it to your Xamarin project (or you can use [**GitZip**](http://kinolien.github.io/gitzip/))<br><br>
-**2.** 🛰 Add `using CPopupLibrary` on the top of your `.cs` file where you want to use custom popups<br><br>
-**3.** 😍 Now just add some code at `YourCustomizePopup.cs` in `YourPopUpCode` Method<br><br>
-**4.** 😎 Create `YourCustomizePopup` object like this:<br><br>
-
+- Clone the project using Git<br>
+- Add `using CPopupLibrary` on the top of your `.cs` file where you want to use custom popups
+- Now just add some code at `YourCustomizePopup.cs` in `YourPopUpCode` Method
+- Create `YourCustomizePopup` object like this:<br>
 ```csharp
 YourCustomizePopup popup = new YourCustomizePopup();
 ```
-
-**5.** 😱 Show the popup!<br>
-
+- Show it over the world
 ```csharp
 await popup.ShowPopUp();
 ```
 
-**6.** 👍 That's it!<br><br>
+### See how it looks in action
 ![A gif demonstrating how the library works](https://i.imgur.com/tpLGIic.gif)
 
-## Coming soon...
+### Credits
 
-- [ ] Add the library to NuGet
-- [x] Add more personalized customization options.
-- [ ] Add to choose more graphics libs (You can make popup using the eg. Skia Sharp )
-- [ ] Add more cool animations! 🎉
-- [ ] Add the project Wiki!
-- [x] Make the library4library system
-
-## Depends on
-
-- **.NET CoreGraphics** | For animations<br>
-
-## Credits
-
-- [**@BartekPacia**](https://github.com/bartekpacia) | For reviews
-- [**@AlancLiu**](https://stackoverflow.com/users/6228063/alanc-liu) | For Idea
+- [**@BartekPacia**](https://github.com/bartekpacia), for reviews
+- [**@AlancLiu**](https://stackoverflow.com/users/6228063/alanc-liu), for idea and insipration
