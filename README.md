@@ -4,13 +4,14 @@
 
 # CustomPopUps.iOS
 
-**Custom popups examples/library for Xamarin.iOS framework.**
+A simple yet powerful library for creating and customizing created popups in Xamarin.iOS framework.
 
 > **Note**<br>
 > Beacause of the fact that Microsoft is depreacting Xamarin as 2022<br>
 > we will add a support for new MAUI, If it will be necesarry.
 
-You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate them? Well, you've just found it!
+You might have thought in the past: is there any great yet simple library to make custom popups in Xamarin.IOS and animate them?<br>
+Well, you've just found it!
 
 ## Features 
 
@@ -20,7 +21,7 @@ You might have thought in the past: is there any great yet simple library to mak
 - Ability to listen on the popup events like show and close
 - Using only Xamarin libraries (built-in), no 3rd party libraries involved
 
-## How to use?
+## Usage
 
 - Clone the project using Git<br>
 - Add `using CPopupLibrary` on the top of your `.cs` file where you want to use custom popups
